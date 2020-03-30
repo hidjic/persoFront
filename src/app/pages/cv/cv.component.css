@@ -1,0 +1,64 @@
+#headerCV{
+    background: rgb(94,9,121);
+    background: radial-gradient(circle, rgba(94,9,121,1) 0%, rgba(94,9,121,1) 50%, rgba(94,9,121,0.5004202364539565) 100%);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    height: 9em;
+    width: 100%;
+    color: white;
+}
+#contenuCV{
+    position: absolute;
+    top: 9em;
+    width: 100%;
+}
+
+.separationHorizontal{
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    margin-left: 25%;
+}
+
+.avatar{
+    background-image: url('../../../assets/images/avatar.png');
+    width: 5em;
+    height: 5em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* CARD */
+
+#competences .cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+#competences .card {
+    min-width: 17em;
+    margin: 1em 1em;
+}
+#competences mat-card-header {
+    text-align: center;
+    justify-content: center;
+}
+#competences li{
+    text-align: center;
+    list-style: none;
+}
+#competences ul {
+    padding: 0;
+    list-style-type: none;
+}
+/* zone button des cards */
+.buttonArea{
+    text-align: center;
+}
+.buttonArea button{
+    margin: 0 2em;
+}
