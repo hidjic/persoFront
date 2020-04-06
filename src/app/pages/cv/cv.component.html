@@ -73,13 +73,29 @@
 
         </div>
 
+        <a href="#" *ngIf="imagePerso">
+            <div class="img imgPerso"></div>
+        </a>
+        <a href="https://www.sbt-human.com/"  *ngIf="imageSbt" target="_blank">
+            <div class="img imgSBT"></div>
+        </a>
+        <a href="https://www.sodifrance.fr/"  *ngIf="imageSodifrance" target="_blank">
+            <div class="img imgSodifrance"></div>
+        </a>
+        <a href="#" *ngIf="imageGlobal">
+            <div class="img imgGlobal"></div>
+        </a>
+
         <!-- slider SBT/Sodifrance -->
-        <!-- <app-slider appSodifrance (valOpacity)="changeOpacity($event)"></app-slider> -->
         <div class="buttonArea">
-            <button appSodifrance mat-raised-button color="primary">Perso</button>
-            <button appSodifrance mat-raised-button color="primary">SBT</button>
-            <button appSodifrance mat-raised-button color="primary">Sodifrance</button>
-            <button appSodifrance mat-raised-button color="primary">Global</button>
+            <button appCvDirective mat-raised-button color="primary" 
+                (click)="gestionImagesCompetences('imagePerso')">Perso</button>
+            <button appCvDirective mat-raised-button color="primary" 
+                (click)="gestionImagesCompetences('imageSbt')">SBT</button>
+            <button appCvDirective mat-raised-button color="primary" 
+                (click)="gestionImagesCompetences('imageSodifrance')">Sodifrance</button>
+            <button appCvDirective mat-raised-button color="primary" 
+                (click)="gestionImagesCompetences('imageGlobal')">Global</button>
         </div>
     </div>
 
@@ -88,6 +104,16 @@
         <!-- mat-tabs => informatique/nettoyage/industrie -->
         <h3>Experiences professionnelles</h3>
         <mat-tab-group>
+            <mat-tab label="Industrie">
+                <div>2004 à 2005</div>
+                <div>Fulmen Auxerre</div>
+            </mat-tab>
+            <mat-tab label="Nettoyage">
+                <div>
+                    <div>2007 à 2012</div>
+                    <div>MultiService 69 Lyon</div>
+                </div>
+            </mat-tab>
             <mat-tab label="Informatique">
                 <div>
                     <div>2018 à aujourd'hui</div>
@@ -97,16 +123,6 @@
                     <div>2014 à 2018</div>
                     <div>SBT Lyon</div>
                 </div>
-            </mat-tab>
-            <mat-tab label="Nettoyage">
-                <div>
-                    <div>2007 à 2012</div>
-                    <div>MultiService 69 Lyon</div>
-                </div>
-            </mat-tab>
-            <mat-tab label="Industrie">
-                <div>2004 à 2005</div>
-                <div>Fulmen Auxerre</div>
             </mat-tab>
         </mat-tab-group>
     </div>

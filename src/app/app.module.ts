@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CvComponent } from './pages/cv/cv.component';
+import { CvDirective } from './pages/cv/cv.directive';
 
 import {A11yModule} from '@angular/cdk/a11y';
 import {ClipboardModule} from '@angular/cdk/clipboard';
@@ -50,16 +51,12 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
-import { SliderComponent } from './pages/cv/slider/slider.component';
-import { SodifranceDirective } from './pages/cv/sodifrance.directive';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     CvComponent,
-    SliderComponent,
-    SodifranceDirective
+    CvDirective
   ],
   imports: [
     BrowserModule,
@@ -115,7 +112,6 @@ import { SodifranceDirective } from './pages/cv/sodifrance.directive';
     MatTreeModule,
     PortalModule,
     ScrollingModule,
-    SliderComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

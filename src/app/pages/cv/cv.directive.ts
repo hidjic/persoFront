@@ -1,9 +1,9 @@
 import { Directive, ElementRef, Renderer2, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appSodifrance]'
+  selector: '[appCvDirective]'
 })
-export class SodifranceDirective {
+export class CvDirective {
 
   opacity = 0;
   inc = true;

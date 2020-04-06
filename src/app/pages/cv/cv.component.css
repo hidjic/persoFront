@@ -62,3 +62,37 @@
 .buttonArea button{
     margin: 0 2em;
 }
+/* images logo */
+#competences{
+    position: relative;
+}
+#competences .img{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.imgPerso{
+    background-image: url('../../../assets/images/perso_logo.png');
+    top: 70%;
+    left: 8%;
+}
+.imgSBT{
+    background-image: url('../../../assets/images/sbt_logo.png');
+    top: 6%;
+    left: 8%;
+    transform: rotate(-45deg);
+}
+.imgSodifrance{
+    background-image: url('../../../assets/images/sodirance_logo.png');
+    top: 12%;
+    left: 81%;
+    transform: rotate(45deg);
+}
+.imgGlobal{
+    background-image: url('../../../assets/images/global.jpg');
+    top: 70%;
+    left: 82%;
+}

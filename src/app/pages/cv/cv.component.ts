@@ -8,18 +8,27 @@ import { MatSliderChange } from '@angular/material/slider';
 })
 export class CvComponent {
 
-  opacity = 1;
+  imagePerso = false;
+  imageSbt = false;
+  imageSodifrance = false;
+  imageGlobal = true;
 
   constructor() { }
 
-  changeOpacity(e: number) {
-    // console.log('test...');
-    // console.log(e);
-    this.opacity = e;
+  gestionImagesCompetences(nameVar: string) {
+    this.imagePerso = false;
+    this.imageSbt = false;
+    this.imageSodifrance = false;
+    this.imageGlobal = false;
+    switch (nameVar) {
+      case 'imagePerso': this.imagePerso = true;
+                         break;
+      case 'imageSbt': this.imageSbt = true;
+                       break;
+      case 'imageSodifrance': this.imageSodifrance = true;
+                              break;
+      case 'imageGlobal': this.imageGlobal = true;
+                          break;
+    }
   }
-  // // {'opacity': expression}
-  // updateopacity() {
-  //   // console.log(this.opacity);
-  //   return this.opacity;
-  // }
 }
