@@ -1,19 +1,30 @@
-import { Component, EventEmitter } from '@angular/core';
-import { MatSliderChange } from '@angular/material/slider';
+import { Component, OnInit, ViewChild, DoCheck } from '@angular/core';
+import { MatTabsModule, MatTabGroup } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-cv',
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.css']
 })
-export class CvComponent {
+export class CvComponent implements OnInit, DoCheck {
 
   imagePerso = false;
   imageSbt = false;
   imageSodifrance = false;
   imageGlobal = true;
+  @ViewChild('tabs') tabs: MatTabsModule;
+  @ViewChild(MatTabGroup) tabGroup: MatTabGroup;
 
   constructor() { }
+
+  ngOnInit() { }
+
+  ngDoCheck() {
+    if (this.tabGroup) {
+      // console.log(this.tabGroup);
+      this.tabGroup.selectedIndex = 2;
+    }
+  }
 
   gestionImagesCompetences(nameVar: string) {
     this.imagePerso = false;
