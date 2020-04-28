@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, DoCheck } from '@angular/core';
-import { MatTabsModule, MatTabGroup } from '@angular/material/tabs';
+// import { MatTabsModule, MatTabGroup } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-cv',
@@ -12,19 +12,14 @@ export class CvComponent implements OnInit, DoCheck {
   imageSbt = false;
   imageSodifrance = false;
   imageGlobal = true;
-  @ViewChild('tabs') tabs: MatTabsModule;
-  @ViewChild(MatTabGroup) tabGroup: MatTabGroup;
+  // @ViewChild('tabs') tabs: MatTabsModule;
+  // @ViewChild(MatTabGroup) tabGroup: MatTabGroup;
 
   constructor() { }
 
   ngOnInit() { }
 
-  ngDoCheck() {
-    if (this.tabGroup) {
-      // console.log(this.tabGroup);
-      this.tabGroup.selectedIndex = 2;
-    }
-  }
+  ngDoCheck() { }
 
   gestionImagesCompetences(nameVar: string) {
     this.imagePerso = false;
