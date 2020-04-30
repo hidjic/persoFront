@@ -15,27 +15,30 @@
     margin-left: 25%;
 }
 
+/**/
+#contenuCV{
+    margin: 0 5%;
+}
+
+/**/
 .avatar{
     background-image: url('../../../assets/images/avatar.png');
-    width: 5em;
-    height: 5em;
+    height: 100px;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
+/**/
+#apropos, #competences, #buttonArea,
+#experiences,#diplomes, #interets,
+#contacts{
+    margin-top: 2em;
+}
 
 /* CARD */
-
-#competences .cards{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin-left: 10%;
-}
 #competences .card {
-    min-width: 17em;
-    margin: 1em 1em;
+    min-width: 250px;
 }
 #competences mat-card-header {
     text-align: center;
@@ -49,9 +52,10 @@
     padding: 0;
     list-style-type: none;
 }
+
 /* zone button des cards */
 .buttonArea{
-    text-align: center;
+    margin-top: 4em;
 }
 .buttonArea button{
     margin: 0 2em;

@@ -6,23 +6,22 @@
 
 <div id="contenuCV">
     <!-- a propos -->
-    <div id="apropos">
-        <div class="avatar"></div>
-        <div>
-            <p>
-                Suite à la découverte des language C et surtout java lors de ma formation Cnam. Je suis devenus developpeur.
-                Dans un premier temps en php / javascript, aujourd'hui java / angular.
-                J'aime le fait d'avoir encore beaucoup a découvrir dans ces technologies et aussi de temps en temps en tester
-                de nouvelles car elles me permettent de progresser (drupal 8, moodle, nodeJS, docker, camel).
-                J'ai un profil fullstack même si je préfère m'amuser coté front... un peu trop parfois...
-            </p>
+    <div id="apropos" fxLayout="row">
+        <div fxFlex="15%" class="avatar"></div>
+        <div fxFlex="85%">
+            <p>Suite à la découverte des language C et surtout java lors de ma formation Cnam.</p>
+            <p>Je suis devenus developpeur.</p>
+            <p>Dans un premier temps en php / javascript, aujourd'hui java / angular.</p>
+            <p>J'aime le fait d'avoir encore beaucoup à découvrir dans ces technologies et aussi de temps en temps en tester
+                de nouvelles car elles me permettent de progresser (drupal 8, moodle, nodeJS, docker, camel).</p>
+            <p>J'ai un profil fullstack même si je préfère m'amuser coté front... un peu trop parfois...</p>
         </div>
     </div>
 
     <!-- competences -->
     <div id="competences">
         <h3>Compétences</h3>
-        <div class="cards">
+        <div class="cards" fxLayout="row" fxLayoutAlign="space-around" fxLayout.lt-lg="column" fxLayoutAlign.lt-lg="center">
             <!-- card back -->
             <mat-card class="card">
                 <mat-card-header>
@@ -93,7 +92,7 @@
         </a>
 
         <!-- slider SBT/Sodifrance -->
-        <div class="buttonArea">
+        <div class="buttonArea" fxLayoutAlign="center">
             <button appCvDirective mat-raised-button color="primary" 
                 (click)="gestionImagesCompetences('imagePerso')">Perso</button>
             <button appCvDirective mat-raised-button color="primary" 
