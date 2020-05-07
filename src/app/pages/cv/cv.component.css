@@ -66,31 +66,46 @@
 }
 #competences .img{
     position: absolute;
-    width: 5em;
-    height: 5em;
+    width: 70px;
+    height: 70px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 1;
+}
+a{
+    position: relative;
 }
 .imgPerso{
     background-image: url('../../../assets/images/perso_logo.png');
-    top: 70%;
-    left: 8%;
+}
+.imgPosition{
+    right: -35px;
 }
 .imgSBT{
     background-image: url('../../../assets/images/sbt_logo.png');
-    top: 6%;
-    left: 8%;
-    transform: rotate(-45deg);
 }
 .imgSodifrance{
     background-image: url('../../../assets/images/sodirance_logo.png');
-    top: 12%;
-    left: 81%;
-    transform: rotate(45deg);
 }
 .imgGlobal{
     background-image: url('../../../assets/images/global.jpg');
-    top: 70%;
-    left: 82%;
+}
+
+
+/**/
+.marge{
+    margin-left: 3em;
+}
+
+
+/**/
+.imgLogos{
+    width: 50px;
+    height: 50px;
+}
+
+/**/
+#contacts{
+    height: 15em;
 }

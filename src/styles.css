@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background: black no-repeat center center fixed;
+    background: lightgray no-repeat center center fixed;
 }
 
 /* arrière plan et placement général */
